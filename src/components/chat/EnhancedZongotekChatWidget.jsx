@@ -484,11 +484,11 @@ const EnhancedZongotekChatWidget = () => {
     return (
       <>
         <style dangerouslySetInnerHTML={{ __html: loaderStyles }} />
-        <div className="fixed right-6 bottom-6 z-50">
+        <div className="fixed z-50 right-6 bottom-6">
           <div className="relative">
             {/* Loading overlay */}
               {isLoading && (
-                <div className="flex absolute inset-0 z-10 justify-center items-center bg-red-500 rounded-full -top-15">
+                <div className="absolute inset-0 z-10 flex items-center justify-center bg-red-500 rounded-full -top-15">
                   <div className="z-10 loader"></div>
                 </div>
               )}
@@ -499,7 +499,7 @@ const EnhancedZongotekChatWidget = () => {
               className="bg-[#FFD700] hover:bg-[#FFC700] transition-all overflow-hidden duration-300 rounded-full w-16 h-16 flex items-center justify-center shadow-lg hover:shadow-xl transform hover:scale-105 relative"
               aria-label="Open chat"
             >
-              <img src="/aibot.png" alt="AI Assistant" className="w-full h-full" />
+              <img src="./aibot.png" alt="AI Assistant" className="w-full h-full" />
               
               
             </button>
@@ -514,9 +514,9 @@ const EnhancedZongotekChatWidget = () => {
     return (
       <>
         <style dangerouslySetInnerHTML={{ __html: loaderStyles }} />
-        <div className="fixed right-6 bottom-6 z-50">
+        <div className="fixed z-50 right-6 bottom-6">
         {/* AI Toggle Button */}
-        <div className="absolute right-0 bottom-0">
+        <div className="absolute bottom-0 right-0">
           <div className="relative">
             <button
               onClick={() => setIsOpen(true)}
@@ -525,11 +525,11 @@ const EnhancedZongotekChatWidget = () => {
               className="bg-[#FFD700] hover:bg-[#FFC700] transition-all overflow-hidden duration-300 rounded-full w-16 h-16 flex items-center justify-center shadow-lg hover:shadow-xl transform hover:scale-105 relative"
               aria-label="Open chat"
             >
-              <img src="/aibot.png" alt="AI Assistant" className="w-full h-full" />
+              <img src="./aibot.png" alt="AI Assistant" className="w-full h-full" />
               
               {/* Loading overlay */}
               {isLoading && (
-                <div className="flex absolute inset-0 justify-center items-center rounded-full bg-black/20">
+                <div className="absolute inset-0 flex items-center justify-center rounded-full bg-black/20">
                   <div className="loader"></div>
                 </div>
               )}
@@ -550,19 +550,19 @@ const EnhancedZongotekChatWidget = () => {
           <div className="p-6">
             {/* Hand wave GIF */}
             <div className="flex justify-center mb-4">
-              <img src="/handwave.gif" alt="Hand wave" className="w-12 h-12" />
+              <img src="./handwave.gif" alt="Hand wave" className="w-12 h-12" />
             </div>
             
             {/* Welcome message */}
             <div className={`text-center mb-6 ${isDarkMode ? 'text-white' : 'text-gray-800'}`}>
-              <h3 className="text-lg font-semibold mb-2">Hi there! 👋</h3>
+              <h3 className="mb-2 text-lg font-semibold">Hi there! 👋</h3>
               <p className="text-sm">
                 We're here to help! Send us a message or give us a call.
               </p>
             </div>
             
             {/* Action buttons */}
-            <div className="space-y-3 mb-4">
+            <div className="mb-4 space-y-3">
               <button
                 onClick={handleChatNow}
                 className="w-full bg-[#e4c206] hover:bg-[#FFC700] text-black font-medium py-2 px-4 rounded transition-colors"
@@ -656,13 +656,13 @@ const EnhancedZongotekChatWidget = () => {
         <div className="flex items-center">
           <div className="w-10 h-10 rounded-full overflow-hidden border-2 border-[#FFD700] mr-3">
             <img
-              src="/aibot.png"
+              src="./aibot.png"
               alt="Support Agent"
               className="object-cover w-full h-full"
             />
           </div>
           <div>
-            <h3 className="font-semibold text-sm">Zongotek Support</h3>
+            <h3 className="text-sm font-semibold">Zongotek Support</h3>
             <p className="text-xs opacity-75">
               {conversationContext?.currentCardId ? `Card: ${conversationContext.currentCardId}` : 'Online'}
             </p>
@@ -671,14 +671,14 @@ const EnhancedZongotekChatWidget = () => {
         <div className="flex items-center gap-2">
           <button
             onClick={() => setShowWelcome(true)}
-            className="p-1 hover:bg-black/10 rounded transition-colors"
+            className="p-1 transition-colors rounded hover:bg-black/10"
             title="Minimize"
           >
             <Minimize2 size={16} />
           </button>
           <button
             onClick={() => setIsOpen(false)}
-            className="p-1 hover:bg-black/10 rounded transition-colors"
+            className="p-1 transition-colors rounded hover:bg-black/10"
             title="Close"
           >
             <X size={16} />

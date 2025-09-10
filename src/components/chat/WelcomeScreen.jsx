@@ -15,7 +15,7 @@ const WelcomeScreen = ({ onStartChat, onClose, width = 320, height = 384 }) => {
     >
       {/* Header */}
       <div className="relative p-6 bg-gradient-to-b from-[#FFD700] to-[#E6B800] text-white rounded-t-[18px]">
-        <div className="flex justify-between items-start">
+        <div className="flex items-start justify-between">
           <div className="flex-1">
             <h1 className="text-2xl font-bold leading-tight">
               How can we help<br />
@@ -38,12 +38,12 @@ const WelcomeScreen = ({ onStartChat, onClose, width = 320, height = 384 }) => {
       <div className="flex flex-col flex-1 p-4">
         {/* Whitney AI Introduction Card */}
         <div className="bg-[#343434] rounded-xl p-4 shadow-lg">
-          <div className="flex gap-3 items-start mb-4">
+          <div className="flex items-start gap-3 mb-4">
             {/* Avatar */}
             <div className="flex-shrink-0">
               <div className="w-12 h-12 rounded-full overflow-hidden relative border-2 border-[#262626]">
                 <img 
-                  src="/aibot.png"
+                  src="./aibot.png"
                   alt="Whitney"
                   className="hidden object-cover w-full h-full"
                 />
@@ -56,7 +56,7 @@ const WelcomeScreen = ({ onStartChat, onClose, width = 320, height = 384 }) => {
             
             {/* Content */}
             <div className="flex-1">
-              <div className="flex gap-2 items-center mb-1">
+              <div className="flex items-center gap-2 mb-1">
                 <span className="font-semibold text-white">Whitney Ai</span>
                 <span className="text-xs text-gray-400">• {currentTime.toLowerCase().replace(/\s/g, '')}</span>
               </div>
@@ -82,18 +82,18 @@ const WelcomeScreen = ({ onStartChat, onClose, width = 320, height = 384 }) => {
       <div className="px-4 pb-4">
         {/* Bottom navigation bar */}
         <div className="bg-[#3A3A3A] rounded-full px-8 py-4 flex items-center justify-between shadow-lg">
-          <button className="flex flex-col gap-1 items-center text-white">
+          <button className="flex flex-col items-center gap-1 text-white">
             <Home size={20} />
             <span className="text-xs font-medium">Home</span>
           </button>
-          <button className="flex flex-col gap-1 items-center text-white/70">
+          <button className="flex flex-col items-center gap-1 text-white/70">
             <MessageCircle size={20} />
             <span className="text-xs font-medium">Chat</span>
           </button>
         </div>
 
         {/* Powered by LiveChat (below nav) */}
-        <div className="flex justify-center items-center mt-3 text-xs text-gray-400">
+        <div className="flex items-center justify-center mt-3 text-xs text-gray-400">
           <span className="mr-1">Powered by</span>
           <div className="w-4 h-4 bg-[#FF6B35] rounded flex items-center justify-center mr-1">
             <svg width="12" height="12" viewBox="0 0 24 24" fill="white">

@@ -28,7 +28,7 @@ export const ThemeProvider = ({ children }) => {
   ]
 
   // Dark mode themes list
-  const darkThemes = ['dark', 'synthwave', 'halloween', 'forest', 'black', 'luxury', 'dracula', 'night', 'coffee', 'dim', 'nord']
+  const darkThemes = ['zongotek', 'dark', 'synthwave', 'halloween', 'forest', 'black', 'luxury', 'dracula', 'night', 'coffee', 'dim', 'nord']
 
   // Check if current theme is a dark theme
   const isDarkMode = darkThemes.includes(theme)

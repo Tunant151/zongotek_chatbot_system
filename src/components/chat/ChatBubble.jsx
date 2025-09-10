@@ -16,7 +16,7 @@ const ChatBubble = ({ message }) => {
         {isBot && (
           <div className="w-8 h-8 rounded-full overflow-hidden border-2 border-[#FFD700] mr-2 flex-shrink-0">
             <img
-              src="/aibot.png"
+              src="./aibot.png"
               alt="Support Agent"
               className="object-cover w-full h-full"
             />

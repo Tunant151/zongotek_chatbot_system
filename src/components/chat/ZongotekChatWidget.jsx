@@ -424,11 +424,11 @@ const ZongotekChatWidget = () => {
     return (
       <>
         <style dangerouslySetInnerHTML={{ __html: loaderStyles }} />
-        <div className="fixed right-6 bottom-6 z-50">
+        <div className="fixed z-50 right-6 bottom-6">
           <div className="relative">
             {/* Loading overlay */}
               {isLoading && (
-                <div className="flex absolute left-2 -top-8 z-10 justify-center items-center rounded-full">
+                <div className="absolute z-10 flex items-center justify-center rounded-full left-2 -top-8">
                   <div className="z-10 bg-green-400 loader"></div>
                 </div>
               )}
@@ -439,7 +439,7 @@ const ZongotekChatWidget = () => {
               className="bg-[#FFD700] hover:bg-[#FFC700] transition-all overflow-hidden duration-300 rounded-full w-16 h-16 flex items-center justify-center shadow-lg hover:shadow-xl transform hover:scale-105 relative"
               aria-label="Open chat"
             >
-              <img src="/aibot.png" alt="AI Assistant" className="w-full h-full" />
+              <img src="./aibot.png" alt="AI Assistant" className="w-full h-full" />
               
               
             </button>
@@ -454,9 +454,9 @@ const ZongotekChatWidget = () => {
     return (
       <>
         <style dangerouslySetInnerHTML={{ __html: loaderStyles }} />
-        <div className="fixed right-6 bottom-6 z-50">
+        <div className="fixed z-50 right-6 bottom-6">
         {/* AI Toggle Button */}
-        <div className="absolute right-0 bottom-0">
+        <div className="absolute bottom-0 right-0">
           <div className="relative">
             <button
               onClick={() => setIsOpen(true)}
@@ -465,11 +465,11 @@ const ZongotekChatWidget = () => {
               className="bg-[#FFD700] hover:bg-[#FFC700] transition-all overflow-hidden duration-300 rounded-full w-16 h-16 flex items-center justify-center shadow-lg hover:shadow-xl transform hover:scale-105 relative"
               aria-label="Open chat"
             >
-              <img src="/aibot.png" alt="AI Assistant" className="w-full h-full" />
+              <img src="./aibot.png" alt="AI Assistant" className="w-full h-full" />
               
               {/* Loading overlay */}
               {isLoading && (
-                <div className="flex absolute inset-0 justify-center items-center p-0 rounded-full bg-black/20">
+                <div className="absolute inset-0 flex items-center justify-center p-0 rounded-full bg-black/20">
                   <div className="loader"></div>
                 </div>
               )}
@@ -488,9 +488,9 @@ const ZongotekChatWidget = () => {
           </button>
 
           {/* Hand wave emoji */}
-          <div className="flex overflow-hidden justify-center items-center mx-4 mt-4 h-32 bg-white rounded-lg">
+          <div className="flex items-center justify-center h-32 mx-4 mt-4 overflow-hidden bg-white rounded-lg">
             <img 
-              src="/handwave.gif" 
+              src="./handwave.gif" 
               alt="AI Assistant" 
               className="object-cover w-full h-full"
             />
@@ -585,7 +585,7 @@ const ZongotekChatWidget = () => {
         <div className="flex items-center">
           <div className="w-10 h-10 rounded-full overflow-hidden border-2 border-[#FFD700] mr-3">
             <img
-              src="/aibot.png"
+              src="./aibot.png"
               alt="Support Agent"
               className="object-cover w-full h-full"
             />
@@ -658,7 +658,7 @@ const ZongotekChatWidget = () => {
 
       {/* Chat Input */}
       <div className={`p-4 border-t ${isDarkMode ? 'border-gray-600 bg-[#2D2D2D]' : 'border-amber-300 bg-amber-100'}`}>
-        <div className="flex gap-2 items-center">
+        <div className="flex items-center gap-2">
           <input
             type="text"
             value={userInput}

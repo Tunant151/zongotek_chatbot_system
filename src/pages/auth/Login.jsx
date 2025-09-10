@@ -8,10 +8,10 @@ const Login = () => {
       <div className="relative items-center justify-center hidden w-1/2 p-8 overflow-hidden lg:flex bg-zongotek-gold">
         <div className="z-10 max-w-md text-center text-zongotek-black">
           <h1 className="mb-4 text-5xl font-bold leading-tight">
-            Have your own
+            <span className='text-primary'>Zongo</span>tek
           </h1>
-          <p className="mb-12 text-3xl font-medium">
-            personal website?
+          <p className="text-sm font-medium ">
+            IT Services From Start to Z.
           </p>
           
           {/* Chatbot Illustration  chanhi*/} 

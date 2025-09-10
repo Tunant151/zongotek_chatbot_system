@@ -2,7 +2,7 @@
   "settings": {
     "company": {
       "name": "Zongotek",
-      "logo": "/logo.png",
+      "logo": "./logo.png",
       "website": "https://zongotek.com",
       "email": "info@zongotek.com",
       "phone": "+1 (555) 123-4567",
