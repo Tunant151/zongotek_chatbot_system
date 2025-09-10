@@ -14,7 +14,7 @@ const Login = () => {
             personal website?
           </p>
           
-          {/* Chatbot Illustration */}
+          {/* Chatbot Illustration  chanhi*/} 
           <div className="relative w-full max-w-lg mx-auto">
             <div className="origin-center transform scale-75">
               <img 
