@@ -5,7 +5,7 @@ const Login = () => {
   return (
     <div className="flex min-h-screen bg-zongotek-gray-light">
       {/* Left Panel - Illustration and Marketing Message */}
-      <div className="hidden overflow-hidden relative justify-center items-center p-8 w-1/2 lg:flex bg-zongotek-gold">
+      <div className="relative items-center justify-center hidden w-1/2 p-8 overflow-hidden lg:flex bg-zongotek-gold">
         <div className="z-10 max-w-md text-center text-zongotek-black">
           <h1 className="mb-4 text-5xl font-bold leading-tight">
             Have your own
@@ -15,25 +15,25 @@ const Login = () => {
           </p>
           
           {/* Chatbot Illustration */}
-          <div className="relative mx-auto w-full max-w-lg">
-            <div className="transform origin-center scale-75">
+          <div className="relative w-full max-w-lg mx-auto">
+            <div className="origin-center transform scale-75">
               <img 
-                src="/chatbot-illustration.svg" 
+                src="./chatbot-illustration.svg" 
                 alt="Chatbot illustration" 
-                className="mx-auto w-full h-auto"
+                className="w-full h-auto mx-auto"
               />
             </div>
           </div>
         </div>
         
         {/* Background decorative elements */}
-        <div className="absolute top-10 left-10 w-20 h-20 rounded-full bg-zongotek-black/10"></div>
-        <div className="absolute right-20 bottom-20 w-16 h-16 rounded-full bg-zongotek-black/10"></div>
-        <div className="absolute left-10 top-1/2 w-12 h-12 rounded-full bg-zongotek-black/5"></div>
+        <div className="absolute w-20 h-20 rounded-full top-10 left-10 bg-zongotek-black/10"></div>
+        <div className="absolute w-16 h-16 rounded-full right-20 bottom-20 bg-zongotek-black/10"></div>
+        <div className="absolute w-12 h-12 rounded-full left-10 top-1/2 bg-zongotek-black/5"></div>
       </div>
 
       {/* Right Panel - Login Form */}
-      <div className="flex justify-center items-center p-4 w-full lg:w-1/2 bg-zongotek-white sm:p-8 lg:p-12">
+      <div className="flex items-center justify-center w-full p-4 lg:w-1/2 bg-zongotek-white sm:p-8 lg:p-12">
         <div className="w-full max-w-md">
           {/* Header */}
           <div className="mb-8 text-center">
