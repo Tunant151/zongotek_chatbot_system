@@ -1,0 +1,52 @@
+{
+  "users": [
+    {
+      "id": "admin_001",
+      "username": "admin",
+      "name": "System Administrator",
+      "email": "admin@zongotek.com",
+      "password": "admin123",
+      "role": "admin",
+      "departmentId": "admin",
+      "status": "active",
+      "createdAt": "2024-01-01T00:00:00.000Z",
+      "lastLogin": "2024-01-15T10:30:00.000Z"
+    },
+    {
+      "id": "agent_001",
+      "username": "john.doe",
+      "name": "John Doe",
+      "email": "john.doe@zongotek.com",
+      "password": "agent123",
+      "role": "agent",
+      "departmentId": "sales",
+      "status": "active",
+      "createdAt": "2024-01-01T00:00:00.000Z",
+      "lastLogin": "2024-01-15T09:15:00.000Z"
+    },
+    {
+      "id": "agent_002",
+      "username": "jane.smith",
+      "name": "Jane Smith",
+      "email": "jane.smith@zongotek.com",
+      "password": "agent123",
+      "role": "agent",
+      "departmentId": "technical",
+      "status": "active",
+      "createdAt": "2024-01-01T00:00:00.000Z",
+      "lastLogin": "2024-01-15T08:45:00.000Z"
+    },
+    {
+      "id": "agent_003",
+      "username": "mike.wilson",
+      "name": "Mike Wilson",
+      "email": "mike.wilson@zongotek.com",
+      "password": "agent123",
+      "role": "agent",
+      "departmentId": "operations",
+      "status": "inactive",
+      "createdAt": "2024-01-01T00:00:00.000Z",
+      "lastLogin": "2024-01-14T16:20:00.000Z"
+    }
+  ]
+}

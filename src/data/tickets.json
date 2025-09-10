@@ -1,0 +1,103 @@
+{
+  "tickets": [
+    {
+      "id": "ticket_001",
+      "subject": "Network connectivity issues",
+      "description": "Customer experiencing intermittent network connectivity problems in their office",
+      "status": "pending",
+      "priority": "medium",
+      "departmentId": "technical",
+      "agentId": null,
+      "customerId": "customer_001",
+      "customerName": "John Smith",
+      "customerEmail": "john.smith@company.com",
+      "createdAt": "2024-01-15T10:30:00.000Z",
+      "updatedAt": "2024-01-15T10:30:00.000Z",
+      "pickedAt": null,
+      "closedAt": null,
+      "messages": [
+        {
+          "id": "msg_001",
+          "text": "Hi, I'm having network connectivity issues in my office. The internet keeps dropping every few minutes.",
+          "type": "customer",
+          "timestamp": "2024-01-15T10:30:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "ticket_002",
+      "subject": "Software installation help",
+      "description": "Customer needs assistance installing new software on their systems",
+      "status": "picked",
+      "priority": "low",
+      "departmentId": "technical",
+      "agentId": "agent_002",
+      "customerId": "customer_002",
+      "customerName": "Sarah Johnson",
+      "customerEmail": "sarah.johnson@business.com",
+      "createdAt": "2024-01-15T09:15:00.000Z",
+      "updatedAt": "2024-01-15T09:45:00.000Z",
+      "pickedAt": "2024-01-15T09:45:00.000Z",
+      "closedAt": null,
+      "messages": [
+        {
+          "id": "msg_002",
+          "text": "Hello, I need help installing Microsoft Office on our new computers.",
+          "type": "customer",
+          "timestamp": "2024-01-15T09:15:00.000Z"
+        },
+        {
+          "id": "msg_003",
+          "text": "Hi Sarah! I'd be happy to help you with the Microsoft Office installation. Let me gather some information first.",
+          "type": "agent",
+          "timestamp": "2024-01-15T09:45:00.000Z",
+          "agentId": "agent_002"
+        }
+      ]
+    },
+    {
+      "id": "ticket_003",
+      "subject": "Pricing inquiry for cloud services",
+      "description": "Customer interested in cloud migration services and pricing",
+      "status": "closed",
+      "priority": "high",
+      "departmentId": "sales",
+      "agentId": "agent_001",
+      "customerId": "customer_003",
+      "customerName": "Mike Davis",
+      "customerEmail": "mike.davis@enterprise.com",
+      "createdAt": "2024-01-14T14:20:00.000Z",
+      "updatedAt": "2024-01-14T16:30:00.000Z",
+      "pickedAt": "2024-01-14T14:25:00.000Z",
+      "closedAt": "2024-01-14T16:30:00.000Z",
+      "messages": [
+        {
+          "id": "msg_004",
+          "text": "Hi, we're looking to migrate our infrastructure to the cloud. Can you provide pricing information?",
+          "type": "customer",
+          "timestamp": "2024-01-14T14:20:00.000Z"
+        },
+        {
+          "id": "msg_005",
+          "text": "Hello Mike! I'd be happy to help you with cloud migration pricing. Let me get some details about your current infrastructure.",
+          "type": "agent",
+          "timestamp": "2024-01-14T14:25:00.000Z",
+          "agentId": "agent_001"
+        },
+        {
+          "id": "msg_006",
+          "text": "We have about 50 employees and currently use on-premise servers. We're looking at AWS or Azure.",
+          "type": "customer",
+          "timestamp": "2024-01-14T14:30:00.000Z"
+        },
+        {
+          "id": "msg_007",
+          "text": "Perfect! Based on your requirements, I can provide you with a customized quote. I'll send you a detailed proposal via email.",
+          "type": "agent",
+          "timestamp": "2024-01-14T16:30:00.000Z",
+          "agentId": "agent_001"
+        }
+      ]
+    }
+  ]
+}

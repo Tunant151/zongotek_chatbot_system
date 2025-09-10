@@ -1,0 +1,69 @@
+{
+  "customers": [
+    {
+      "id": "customer_001",
+      "name": "John Smith",
+      "email": "john.smith@company.com",
+      "phone": "+1-555-0123",
+      "company": "Tech Solutions Inc.",
+      "industry": "Technology",
+      "location": "New York, NY",
+      "status": "active",
+      "createdAt": "2024-01-10T08:00:00.000Z",
+      "lastContact": "2024-01-15T10:30:00.000Z",
+      "notes": "Regular customer, prefers email communication"
+    },
+    {
+      "id": "customer_002",
+      "name": "Sarah Johnson",
+      "email": "sarah.johnson@business.com",
+      "phone": "+1-555-0456",
+      "company": "Business Corp",
+      "industry": "Finance",
+      "location": "Los Angeles, CA",
+      "status": "active",
+      "createdAt": "2024-01-12T14:30:00.000Z",
+      "lastContact": "2024-01-15T09:15:00.000Z",
+      "notes": "New customer, interested in cloud services"
+    },
+    {
+      "id": "customer_003",
+      "name": "Mike Davis",
+      "email": "mike.davis@enterprise.com",
+      "phone": "+1-555-0789",
+      "company": "Enterprise Solutions",
+      "industry": "Manufacturing",
+      "location": "Chicago, IL",
+      "status": "active",
+      "createdAt": "2024-01-08T11:20:00.000Z",
+      "lastContact": "2024-01-14T16:30:00.000Z",
+      "notes": "Large enterprise client, high priority"
+    },
+    {
+      "id": "customer_004",
+      "name": "Emily Wilson",
+      "email": "emily.wilson@startup.com",
+      "phone": "+1-555-0321",
+      "company": "StartupXYZ",
+      "industry": "Startup",
+      "location": "Austin, TX",
+      "status": "prospect",
+      "createdAt": "2024-01-13T16:45:00.000Z",
+      "lastContact": "2024-01-13T16:45:00.000Z",
+      "notes": "Startup company, budget-conscious, needs cost-effective solutions"
+    },
+    {
+      "id": "customer_005",
+      "name": "David Brown",
+      "email": "david.brown@retail.com",
+      "phone": "+1-555-0654",
+      "company": "Retail Chain",
+      "industry": "Retail",
+      "location": "Miami, FL",
+      "status": "inactive",
+      "createdAt": "2023-12-20T09:15:00.000Z",
+      "lastContact": "2023-12-28T15:30:00.000Z",
+      "notes": "Previous customer, contract ended, may return"
+    }
+  ]
+}

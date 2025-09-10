@@ -1,0 +1,44 @@
+{
+  "departments": [
+    {
+      "id": "admin",
+      "name": "Administration",
+      "description": "System administration and management",
+      "color": "primary",
+      "isActive": true,
+      "createdAt": "2024-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "sales",
+      "name": "Sales",
+      "description": "Sales team for customer acquisition and support",
+      "color": "success",
+      "isActive": true,
+      "createdAt": "2024-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "technical",
+      "name": "Technical Support",
+      "description": "Technical support and IT services",
+      "color": "warning",
+      "isActive": true,
+      "createdAt": "2024-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "operations",
+      "name": "Operations",
+      "description": "General operations and customer service",
+      "color": "info",
+      "isActive": true,
+      "createdAt": "2024-01-01T00:00:00.000Z"
+    },
+    {
+      "id": "security",
+      "name": "Cybersecurity",
+      "description": "Cybersecurity and security operations",
+      "color": "error",
+      "isActive": true,
+      "createdAt": "2024-01-01T00:00:00.000Z"
+    }
+  ]
+}

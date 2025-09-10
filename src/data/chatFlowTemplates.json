@@ -1,0 +1,203 @@
+{
+  "templates": [
+    {
+      "id": "template_001",
+      "name": "Basic Customer Support",
+      "description": "A simple customer support flow with common options",
+      "category": "support",
+      "isPublic": true,
+      "createdAt": "2024-01-01T00:00:00.000Z",
+      "flow": {
+        "id": "template_001",
+        "name": "Basic Customer Support",
+        "description": "A simple customer support flow with common options",
+        "status": "inactive",
+        "createdAt": "2024-01-01T00:00:00.000Z",
+        "updatedAt": "2024-01-01T00:00:00.000Z",
+        "questions": [
+          {
+            "id": "q_001",
+            "text": "Hello! How can I help you today?",
+            "type": "text",
+            "isInitial": true,
+            "position": { "x": 250, "y": 100 },
+            "answers": [
+              {
+                "id": "a_001",
+                "text": "I need technical support",
+                "isPrimary": true,
+                "isSecondary": false,
+                "actions": [
+                  {
+                    "id": "action_001",
+                    "type": "navigate_to_question",
+                    "payload": { "questionId": "q_002" }
+                  }
+                ]
+              },
+              {
+                "id": "a_002",
+                "text": "I want to speak to a human",
+                "isPrimary": false,
+                "isSecondary": true,
+                "actions": [
+                  {
+                    "id": "action_002",
+                    "type": "transfer_to_agent",
+                    "payload": { "department": "operations" }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "q_002",
+            "text": "What technical issue are you experiencing?",
+            "type": "text",
+            "isInitial": false,
+            "position": { "x": 600, "y": 100 },
+            "answers": [
+              {
+                "id": "a_003",
+                "text": "Network problems",
+                "isPrimary": false,
+                "isSecondary": false,
+                "actions": [
+                  {
+                    "id": "action_003",
+                    "type": "send_message",
+                    "payload": { "message": "I'll help you with network issues. Let me transfer you to our technical team." }
+                  },
+                  {
+                    "id": "action_004",
+                    "type": "transfer_to_agent",
+                    "payload": { "department": "technical" }
+                  }
+                ]
+              },
+              {
+                "id": "a_004",
+                "text": "Software issues",
+                "isPrimary": false,
+                "isSecondary": false,
+                "actions": [
+                  {
+                    "id": "action_005",
+                    "type": "send_message",
+                    "payload": { "message": "I'll help you with software issues. Let me transfer you to our technical team." }
+                  },
+                  {
+                    "id": "action_006",
+                    "type": "transfer_to_agent",
+                    "payload": { "department": "technical" }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "template_002",
+      "name": "Sales Inquiry Flow",
+      "description": "A flow for handling sales inquiries and lead generation",
+      "category": "sales",
+      "isPublic": true,
+      "createdAt": "2024-01-01T00:00:00.000Z",
+      "flow": {
+        "id": "template_002",
+        "name": "Sales Inquiry Flow",
+        "description": "A flow for handling sales inquiries and lead generation",
+        "status": "inactive",
+        "createdAt": "2024-01-01T00:00:00.000Z",
+        "updatedAt": "2024-01-01T00:00:00.000Z",
+        "questions": [
+          {
+            "id": "q_003",
+            "text": "Welcome! I'm here to help you learn about our services. What interests you most?",
+            "type": "text",
+            "isInitial": true,
+            "position": { "x": 250, "y": 100 },
+            "answers": [
+              {
+                "id": "a_005",
+                "text": "Learn about pricing",
+                "isPrimary": true,
+                "isSecondary": false,
+                "actions": [
+                  {
+                    "id": "action_007",
+                    "type": "navigate_to_question",
+                    "payload": { "questionId": "q_004" }
+                  }
+                ]
+              },
+              {
+                "id": "a_006",
+                "text": "Schedule a demo",
+                "isPrimary": true,
+                "isSecondary": false,
+                "actions": [
+                  {
+                    "id": "action_008",
+                    "type": "transfer_to_agent",
+                    "payload": { "department": "sales" }
+                  }
+                ]
+              },
+              {
+                "id": "a_007",
+                "text": "Download brochure",
+                "isPrimary": false,
+                "isSecondary": true,
+                "actions": [
+                  {
+                    "id": "action_009",
+                    "type": "redirect_to_url",
+                    "payload": { "url": "https://zongotek.com/brochure" }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "q_004",
+            "text": "Our pricing is customized based on your needs. Would you like to:",
+            "type": "text",
+            "isInitial": false,
+            "position": { "x": 600, "y": 100 },
+            "answers": [
+              {
+                "id": "a_008",
+                "text": "Get a custom quote",
+                "isPrimary": true,
+                "isSecondary": false,
+                "actions": [
+                  {
+                    "id": "action_010",
+                    "type": "transfer_to_agent",
+                    "payload": { "department": "sales" }
+                  }
+                ]
+              },
+              {
+                "id": "a_009",
+                "text": "See general pricing",
+                "isPrimary": false,
+                "isSecondary": false,
+                "actions": [
+                  {
+                    "id": "action_011",
+                    "type": "redirect_to_url",
+                    "payload": { "url": "https://zongotek.com/pricing" }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

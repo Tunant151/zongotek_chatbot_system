@@ -1,0 +1,72 @@
+{
+  "settings": {
+    "company": {
+      "name": "Zongotek",
+      "logo": "/logo.png",
+      "website": "https://zongotek.com",
+      "email": "info@zongotek.com",
+      "phone": "+1 (555) 123-4567",
+      "address": "123 Tech Street, Silicon Valley, CA",
+      "businessHours": "Mon-Fri 9AM-6PM PST"
+    },
+    "chat": {
+      "welcomeMessage": "👋 Hi there! Welcome to Zongotek. I'm your virtual assistant. How can I help you today?",
+      "offlineMessage": "We're currently offline. Please leave a message and we'll get back to you soon.",
+      "typingDelay": 1000,
+      "autoResponseDelay": 2000,
+      "maxMessageLength": 1000,
+      "enableFileUpload": true,
+      "enableEmojis": true
+    },
+    "tickets": {
+      "autoAssign": true,
+      "defaultDepartment": "operations",
+      "priorityLevels": ["low", "medium", "high", "urgent"],
+      "statuses": ["pending", "picked", "in_progress", "resolved", "closed"],
+      "slaHours": {
+        "low": 48,
+        "medium": 24,
+        "high": 8,
+        "urgent": 2
+      }
+    },
+    "notifications": {
+      "email": {
+        "enabled": true,
+        "smtp": {
+          "host": "smtp.gmail.com",
+          "port": 587,
+          "secure": false,
+          "auth": {
+            "user": "noreply@zongotek.com",
+            "pass": "your-app-password"
+          }
+        }
+      },
+      "push": {
+        "enabled": true,
+        "vapidKeys": {
+          "publicKey": "your-vapid-public-key",
+          "privateKey": "your-vapid-private-key"
+        }
+      }
+    },
+    "security": {
+      "sessionTimeout": 3600000,
+      "maxLoginAttempts": 5,
+      "passwordMinLength": 8,
+      "requireTwoFactor": false,
+      "allowedDomains": ["zongotek.com", "company.com"]
+    },
+    "features": {
+      "chatbot": true,
+      "liveChat": true,
+      "ticketSystem": true,
+      "fileSharing": true,
+      "videoCalls": false,
+      "screenSharing": false,
+      "analytics": true,
+      "reporting": true
+    }
+  }
+}
