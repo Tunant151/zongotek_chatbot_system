@@ -18,6 +18,7 @@
     "@tailwindcss/vite": "^4.1.11",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
+    "dagre": "^0.8.5",
     "daisyui": "^5.0.46",
     "date-fns": "^4.1.0",
     "lucide-react": "^0.525.0",

@@ -16,7 +16,7 @@ const ChatFlowBuilderContent = () => {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-base-100">
       {showTester && currentEditingFlow ? (
         <ChatFlowTester flowId={currentEditingFlow.id} onBack={handleBackFromTester} />
       ) : currentEditingFlow ? (

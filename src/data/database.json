@@ -1,1115 +1,607 @@
 {
   "chatFlows": [
     {
-      "id": "welcome",
+      "id": "zongotek_master_flow",
       "isInitial": true,
-      "message": "👋 Hello, welcome to **Zongotek**! How can I help you today?",
-      "options": [
-        {
-          "text": "📚 Explore Courses",
-          "value": "explore_courses"
-        },
-        {
-          "text": "💻 IT Equipment & Sales",
-          "value": "equipment_sales"
-        },
-        {
-          "text": "🛠 Support & Help",
-          "value": "support_help"
-        },
-        {
-          "text": "🗨 Talk to a Human",
-          "value": "talk_to_human"
-        }
-      ]
-    },
-    {
-      "id": "explore_courses",
-      "message": "Great! What type of courses are you interested in?",
-      "options": [
-        {
-          "text": "🖥 Technology Education",
-          "value": "technology_education"
-        },
-        {
-          "text": "🌐 Digital Literacy & IT",
-          "value": "digital_literacy"
-        },
-        {
-          "text": "🎨 Creative & Language",
-          "value": "creative_language"
-        },
-        {
-          "text": "📖 More Categories",
-          "value": "more_categories"
-        },
-        {
-          "text": "↩ Back",
-          "value": "welcome"
-        }
-      ]
-    },
-    {
-      "id": "technology_education",
-      "message": "We offer specialized courses in technology. Which one would you like to know more about?",
-      "options": [
-        {
-          "text": "💻 Software Development",
-          "value": "software_development"
-        },
-        {
-          "text": "🔒 Cybersecurity",
-          "value": "cybersecurity"
-        },
-        {
-          "text": "☁️ Cloud Computing",
-          "value": "cloud_computing"
-        },
-        {
-          "text": "↩ Back",
-          "value": "explore_courses"
-        }
-      ]
-    },
-    {
-      "id": "digital_literacy",
-      "message": "Our digital literacy courses are designed to build strong IT foundations. Pick a category below.",
-      "options": [
-        {
-          "text": "🖥 Basic Computer Skills",
-          "value": "basic_computer_skills"
-        },
-        {
-          "text": "📊 Microsoft Office Suite",
-          "value": "microsoft_office"
-        },
-        {
-          "text": "🌍 Internet & Online Safety",
-          "value": "internet_safety"
-        },
-        {
-          "text": "↩ Back",
-          "value": "explore_courses"
-        }
-      ]
-    },
-    {
-      "id": "creative_language",
-      "message": "Explore our creative and language courses.",
-      "options": [
-        {
-          "text": "🖌 Graphic Design",
-          "value": "graphic_design"
-        },
-        {
-          "text": "🎬 Video Editing",
-          "value": "video_editing"
-        },
-        {
-          "text": "🗣 English for Professionals",
-          "value": "english_professionals"
-        },
-        {
-          "text": "↩ Back",
-          "value": "explore_courses"
-        }
-      ]
-    },
-    {
-      "id": "more_categories",
-      "message": "We also offer other programs tailored to your needs. What would you like to explore?",
-      "options": [
-        {
-          "text": "📈 Business & Entrepreneurship",
-          "value": "business_entrepreneurship"
-        },
-        {
-          "text": "🏫 Education & Teaching Skills",
-          "value": "education_teaching"
-        },
-        {
-          "text": "🤝 Professional Development",
-          "value": "professional_development"
-        },
-        {
-          "text": "↩ Back",
-          "value": "explore_courses"
-        }
-      ]
-    },
-    {
-      "id": "software_development",
-      "message": "Our Software Development courses cover modern programming languages, frameworks, and best practices. You'll learn to build web applications, mobile apps, and software solutions.",
-      "options": [
-        {
-          "text": "📅 View Course Schedule",
-          "value": "course_schedule"
-        },
-        {
-          "text": "💵 View Fees",
-          "value": "course_fees"
-        },
-        {
-          "text": "📝 Enroll Now",
-          "value": "enroll_now"
-        },
-        {
-          "text": "↩ Back to Courses",
-          "value": "technology_education"
-        }
-      ]
-    },
-    {
-      "id": "cybersecurity",
-      "message": "Our Cybersecurity courses teach you to protect systems and data from threats. Learn ethical hacking, network security, and incident response.",
-      "options": [
-        {
-          "text": "📅 View Course Schedule",
-          "value": "course_schedule"
-        },
-        {
-          "text": "💵 View Fees",
-          "value": "course_fees"
-        },
-        {
-          "text": "📝 Enroll Now",
-          "value": "enroll_now"
-        },
-        {
-          "text": "↩ Back to Courses",
-          "value": "technology_education"
-        }
-      ]
-    },
-    {
-      "id": "cloud_computing",
-      "message": "Our Cloud Computing courses cover AWS, Azure, and Google Cloud platforms. Learn to deploy, manage, and scale applications in the cloud.",
-      "options": [
-        {
-          "text": "📅 View Course Schedule",
-          "value": "course_schedule"
-        },
-        {
-          "text": "💵 View Fees",
-          "value": "course_fees"
-        },
-        {
-          "text": "📝 Enroll Now",
-          "value": "enroll_now"
-        },
-        {
-          "text": "↩ Back to Courses",
-          "value": "technology_education"
-        }
-      ]
-    },
-    {
-      "id": "basic_computer_skills",
-      "message": "Our Basic Computer Skills course is perfect for beginners. Learn file management, internet browsing, email, and essential computer operations.",
-      "options": [
-        {
-          "text": "📅 View Course Schedule",
-          "value": "course_schedule"
-        },
-        {
-          "text": "💵 View Fees",
-          "value": "course_fees"
-        },
-        {
-          "text": "📝 Enroll Now",
-          "value": "enroll_now"
-        },
-        {
-          "text": "↩ Back to Courses",
-          "value": "digital_literacy"
-        }
-      ]
-    },
-    {
-      "id": "microsoft_office",
-      "message": "Master Microsoft Office Suite with our comprehensive course covering Word, Excel, PowerPoint, and Outlook for professional productivity.",
-      "options": [
-        {
-          "text": "📅 View Course Schedule",
-          "value": "course_schedule"
-        },
-        {
-          "text": "💵 View Fees",
-          "value": "course_fees"
-        },
-        {
-          "text": "📝 Enroll Now",
-          "value": "enroll_now"
-        },
-        {
-          "text": "↩ Back to Courses",
-          "value": "digital_literacy"
-        }
-      ]
-    },
-    {
-      "id": "internet_safety",
-      "message": "Learn to navigate the internet safely and securely. Our course covers online privacy, security best practices, and protecting your digital identity.",
-      "options": [
-        {
-          "text": "📅 View Course Schedule",
-          "value": "course_schedule"
-        },
-        {
-          "text": "💵 View Fees",
-          "value": "course_fees"
-        },
-        {
-          "text": "📝 Enroll Now",
-          "value": "enroll_now"
-        },
-        {
-          "text": "↩ Back to Courses",
-          "value": "digital_literacy"
-        }
-      ]
-    },
-    {
-      "id": "graphic_design",
-      "message": "Unleash your creativity with our Graphic Design course. Learn Adobe Creative Suite, design principles, and create stunning visual content.",
-      "options": [
-        {
-          "text": "📅 View Course Schedule",
-          "value": "course_schedule"
-        },
-        {
-          "text": "💵 View Fees",
-          "value": "course_fees"
-        },
-        {
-          "text": "📝 Enroll Now",
-          "value": "enroll_now"
-        },
-        {
-          "text": "↩ Back to Courses",
-          "value": "creative_language"
-        }
-      ]
-    },
-    {
-      "id": "video_editing",
-      "message": "Create professional videos with our Video Editing course. Learn Adobe Premiere Pro, After Effects, and video production techniques.",
-      "options": [
-        {
-          "text": "📅 View Course Schedule",
-          "value": "course_schedule"
-        },
-        {
-          "text": "💵 View Fees",
-          "value": "course_fees"
-        },
-        {
-          "text": "📝 Enroll Now",
-          "value": "enroll_now"
-        },
-        {
-          "text": "↩ Back to Courses",
-          "value": "creative_language"
-        }
-      ]
-    },
-    {
-      "id": "english_professionals",
-      "message": "Improve your professional English communication skills. Our course focuses on business writing, presentations, and workplace communication.",
-      "options": [
-        {
-          "text": "📅 View Course Schedule",
-          "value": "course_schedule"
-        },
-        {
-          "text": "💵 View Fees",
-          "value": "course_fees"
-        },
-        {
-          "text": "📝 Enroll Now",
-          "value": "enroll_now"
-        },
-        {
-          "text": "↩ Back to Courses",
-          "value": "creative_language"
-        }
-      ]
-    },
-    {
-      "id": "business_entrepreneurship",
-      "message": "Start and grow your business with our Business & Entrepreneurship course. Learn business planning, marketing, finance, and leadership skills.",
-      "options": [
-        {
-          "text": "📅 View Course Schedule",
-          "value": "course_schedule"
-        },
-        {
-          "text": "💵 View Fees",
-          "value": "course_fees"
-        },
-        {
-          "text": "📝 Enroll Now",
-          "value": "enroll_now"
-        },
-        {
-          "text": "↩ Back to Courses",
-          "value": "more_categories"
-        }
-      ]
-    },
-    {
-      "id": "education_teaching",
-      "message": "Enhance your teaching skills with our Education & Teaching course. Learn modern teaching methods, classroom management, and educational technology.",
-      "options": [
-        {
-          "text": "📅 View Course Schedule",
-          "value": "course_schedule"
-        },
-        {
-          "text": "💵 View Fees",
-          "value": "course_fees"
-        },
-        {
-          "text": "📝 Enroll Now",
-          "value": "enroll_now"
-        },
-        {
-          "text": "↩ Back to Courses",
-          "value": "more_categories"
-        }
-      ]
-    },
-    {
-      "id": "professional_development",
-      "message": "Advance your career with our Professional Development course. Learn leadership, project management, communication, and career advancement strategies.",
-      "options": [
-        {
-          "text": "📅 View Course Schedule",
-          "value": "course_schedule"
-        },
-        {
-          "text": "💵 View Fees",
-          "value": "course_fees"
-        },
-        {
-          "text": "📝 Enroll Now",
-          "value": "enroll_now"
-        },
-        {
-          "text": "↩ Back to Courses",
-          "value": "more_categories"
-        }
-      ]
-    },
-    {
-      "id": "course_schedule",
-      "message": "Here are our upcoming course schedules:\n\n📅 **Morning Classes**: 9:00 AM - 12:00 PM (Mon-Fri)\n📅 **Evening Classes**: 6:00 PM - 9:00 PM (Mon-Fri)\n📅 **Weekend Classes**: 10:00 AM - 4:00 PM (Sat-Sun)\n\nClasses start every month. Would you like to enroll or need more information?",
-      "options": [
-        {
-          "text": "📝 Enroll Now",
-          "value": "enroll_now"
-        },
-        {
-          "text": "💵 View Fees",
-          "value": "course_fees"
-        },
-        {
-          "text": "🗨 Talk to Admissions",
-          "value": "talk_to_human"
-        },
-        {
-          "text": "↩ Back to Courses",
-          "value": "explore_courses"
-        }
-      ]
-    },
-    {
-      "id": "course_fees",
-      "message": "Our course fees are competitive and flexible:\n\n💰 **Individual Courses**: $299 - $599\n💰 **Course Bundles**: Save up to 30%\n💰 **Payment Plans**: Available (3-6 months)\n💰 **Group Discounts**: 10% off for 3+ students\n\nWould you like to enroll or speak with our admissions team?",
-      "options": [
-        {
-          "text": "📝 Enroll Now",
-          "value": "enroll_now"
-        },
-        {
-          "text": "📅 View Schedule",
-          "value": "course_schedule"
-        },
-        {
-          "text": "🗨 Talk to Admissions",
-          "value": "talk_to_human"
-        },
-        {
-          "text": "↩ Back to Courses",
-          "value": "explore_courses"
-        }
-      ]
-    },
-    {
-      "id": "enroll_now",
-      "message": "Great! To enroll in our courses, I'll need some information from you. Please provide:\n\n1. Full Name\n2. Email Address\n3. Phone Number\n4. Course of Interest\n5. Preferred Schedule\n\nI'll connect you with our admissions team to complete your enrollment.",
-      "collectUserInfo": true,
-      "options": [
-        {
-          "text": "Submit Information",
-          "value": "submit_enrollment"
-        },
-        {
-          "text": "🗨 Talk to Admissions",
-          "value": "talk_to_human"
-        },
-        {
-          "text": "↩ Back to Courses",
-          "value": "explore_courses"
-        }
-      ]
-    },
-    {
-      "id": "submit_enrollment",
-      "message": "Thank you for your interest in our courses! Our admissions team will contact you within 24 hours to complete your enrollment and answer any questions you may have.",
-      "options": [
-        {
-          "text": "🔄 Return to Main Menu",
-          "value": "welcome"
-        },
-        {
-          "text": "👋 End Chat",
-          "value": "end"
-        }
-      ]
-    },
-    {
-      "id": "equipment_sales",
-      "message": "Looking for IT equipment? We provide a wide range of tech products.",
-      "options": [
-        {
-          "text": "🖥 Laptops & Desktops",
-          "value": "laptops_desktops"
-        },
-        {
-          "text": "📱 Smartphones & Tablets",
-          "value": "smartphones_tablets"
-        },
-        {
-          "text": "🖨 Printers & Accessories",
-          "value": "printers_accessories"
-        },
-        {
-          "text": "🔧 Networking Devices",
-          "value": "networking_devices"
-        },
-        {
-          "text": "↩ Back",
-          "value": "welcome"
-        }
-      ]
-    },
-    {
-      "id": "laptops_desktops",
-      "message": "Great choice! We offer high-quality laptops and desktops from top brands like Dell, HP, Lenovo, and Apple. Would you like to:",
-      "options": [
-        {
-          "text": "📋 View Product List",
-          "value": "product_list"
-        },
-        {
-          "text": "💵 Request a Quote",
-          "value": "request_quote"
-        },
-        {
-          "text": "📦 Order Now",
-          "value": "order_now"
-        },
-        {
-          "text": "↩ Back",
-          "value": "equipment_sales"
-        }
-      ]
-    },
-    {
-      "id": "smartphones_tablets",
-      "message": "We have the latest smartphones and tablets from Apple, Samsung, and other leading brands. Would you like to:",
-      "options": [
-        {
-          "text": "📋 View Product List",
-          "value": "product_list"
-        },
-        {
-          "text": "💵 Request a Quote",
-          "value": "request_quote"
-        },
-        {
-          "text": "📦 Order Now",
-          "value": "order_now"
-        },
-        {
-          "text": "↩ Back",
-          "value": "equipment_sales"
-        }
-      ]
-    },
-    {
-      "id": "printers_accessories",
-      "message": "We offer a complete range of printers, scanners, and IT accessories for your business needs. Would you like to:",
-      "options": [
-        {
-          "text": "📋 View Product List",
-          "value": "product_list"
-        },
-        {
-          "text": "💵 Request a Quote",
-          "value": "request_quote"
-        },
-        {
-          "text": "📦 Order Now",
-          "value": "order_now"
-        },
-        {
-          "text": "↩ Back",
-          "value": "equipment_sales"
-        }
-      ]
-    },
-    {
-      "id": "networking_devices",
-      "message": "We provide networking equipment including routers, switches, access points, and security devices. Would you like to:",
-      "options": [
-        {
-          "text": "📋 View Product List",
-          "value": "product_list"
-        },
-        {
-          "text": "💵 Request a Quote",
-          "value": "request_quote"
-        },
-        {
-          "text": "📦 Order Now",
-          "value": "order_now"
-        },
-        {
-          "text": "↩ Back",
-          "value": "equipment_sales"
-        }
-      ]
-    },
-    {
-      "id": "product_list",
-      "message": "Here are our featured products:\n\n🖥 **Laptops**: Dell XPS, MacBook Pro, ThinkPad X1\n📱 **Smartphones**: iPhone 15, Samsung Galaxy S24\n🖨 **Printers**: HP LaserJet, Canon PIXMA\n🔧 **Networking**: Cisco, Netgear, Ubiquiti\n\nWould you like a detailed quote or to speak with our sales team?",
-      "options": [
-        {
-          "text": "💵 Request a Quote",
-          "value": "request_quote"
-        },
-        {
-          "text": "📦 Order Now",
-          "value": "order_now"
-        },
-        {
-          "text": "🗨 Talk to Sales",
-          "value": "talk_to_human"
-        },
-        {
-          "text": "↩ Back to Equipment",
-          "value": "equipment_sales"
-        }
-      ]
-    },
-    {
-      "id": "request_quote",
-      "message": "I'll help you get a personalized quote. Please provide:\n\n1. Company Name\n2. Contact Information\n3. Products of Interest\n4. Quantity Needed\n5. Budget Range\n\nOur sales team will prepare a detailed quote for you.",
-      "collectUserInfo": true,
-      "options": [
-        {
-          "text": "Submit Request",
-          "value": "submit_quote_request"
-        },
-        {
-          "text": "🗨 Talk to Sales",
-          "value": "talk_to_human"
-        },
-        {
-          "text": "↩ Back to Equipment",
-          "value": "equipment_sales"
-        }
-      ]
-    },
-    {
-      "id": "submit_quote_request",
-      "message": "Thank you for your quote request! Our sales team will contact you within 2 hours with a detailed quote and special pricing options.",
-      "options": [
-        {
-          "text": "🔄 Return to Main Menu",
-          "value": "welcome"
-        },
-        {
-          "text": "👋 End Chat",
-          "value": "end"
-        }
-      ]
-    },
-    {
-      "id": "order_now",
-      "message": "Ready to place an order? I'll connect you with our sales team to process your order and arrange delivery. Please provide your contact information.",
-      "collectUserInfo": true,
-      "options": [
-        {
-          "text": "Submit Order Request",
-          "value": "submit_order"
-        },
-        {
-          "text": "🗨 Talk to Sales",
-          "value": "talk_to_human"
-        },
-        {
-          "text": "↩ Back to Equipment",
-          "value": "equipment_sales"
-        }
-      ]
-    },
-    {
-      "id": "submit_order",
-      "message": "Thank you for your order! Our sales team will contact you shortly to confirm your order details, arrange payment, and schedule delivery.",
-      "options": [
-        {
-          "text": "🔄 Return to Main Menu",
-          "value": "welcome"
-        },
-        {
-          "text": "👋 End Chat",
-          "value": "end"
-        }
-      ]
-    },
-    {
-      "id": "support_help",
-      "message": "No worries, I'm here to help! What kind of support do you need?",
-      "options": [
-        {
-          "text": "🛠 Technical Support",
-          "value": "technical_support"
-        },
-        {
-          "text": "📚 Course Support",
-          "value": "course_support"
-        },
-        {
-          "text": "💳 Billing & Payments",
-          "value": "billing_payments"
-        },
-        {
-          "text": "↩ Back",
-          "value": "welcome"
-        }
-      ]
-    },
-    {
-      "id": "technical_support",
-      "message": "Please select the issue you're facing.",
-      "options": [
-        {
-          "text": "⚡ Device not working",
-          "value": "device_not_working"
-        },
-        {
-          "text": "🌐 Internet/Network issue",
-          "value": "network_issue"
-        },
-        {
-          "text": "🔧 Software Installation",
-          "value": "software_installation"
-        },
-        {
-          "text": "↩ Back",
-          "value": "support_help"
-        }
-      ]
-    },
-    {
-      "id": "course_support",
-      "message": "What do you need help with?",
-      "options": [
-        {
-          "text": "📖 Accessing Course Material",
-          "value": "accessing_material"
-        },
-        {
-          "text": "📝 Enrollment Issues",
-          "value": "enrollment_issues"
-        },
-        {
-          "text": "👩‍🏫 Talking to a Lecturer",
-          "value": "talk_to_lecturer"
-        },
-        {
-          "text": "↩ Back",
-          "value": "support_help"
-        }
-      ]
-    },
-    {
-      "id": "billing_payments",
-      "message": "Choose one of the options below.",
-      "options": [
-        {
-          "text": "💳 Make a Payment",
-          "value": "make_payment"
-        },
-        {
-          "text": "📑 Request Invoice",
-          "value": "request_invoice"
-        },
-        {
-          "text": "❓ Payment Issues",
-          "value": "payment_issues"
-        },
-        {
-          "text": "↩ Back",
-          "value": "support_help"
-        }
-      ]
-    },
-    {
-      "id": "device_not_working",
-      "message": "I understand your device isn't working properly. Let's troubleshoot this step by step:\n\n1. **Check power connections** - Ensure all cables are secure\n2. **Restart the device** - Power off and on again\n3. **Check for error messages** - Note any error codes or messages\n4. **Test with different cables** - Try alternative power/data cables\n\nDid any of these steps help resolve the issue?",
-      "options": [
-        {
-          "text": "✅ Yes, it's working now",
-          "value": "issue_resolved"
-        },
-        {
-          "text": "❌ Still not working",
-          "value": "escalate_technical"
-        },
-        {
-          "text": "🗨 Talk to Technician",
-          "value": "talk_to_human"
-        },
-        {
-          "text": "↩ Back to Support",
-          "value": "technical_support"
-        }
-      ]
-    },
-    {
-      "id": "network_issue",
-      "message": "Network issues can be frustrating. Let's try these troubleshooting steps:\n\n1. **Restart your router/modem** - Unplug for 30 seconds, then reconnect\n2. **Check cable connections** - Ensure all network cables are secure\n3. **Test on different devices** - See if other devices can connect\n4. **Check for outages** - Contact your ISP if needed\n\nIs your network connection working now?",
-      "options": [
-        {
-          "text": "✅ Yes, it's working now",
-          "value": "issue_resolved"
-        },
-        {
-          "text": "❌ Still having issues",
-          "value": "escalate_technical"
-        },
-        {
-          "text": "🗨 Talk to Network Specialist",
-          "value": "talk_to_human"
-        },
-        {
-          "text": "↩ Back to Support",
-          "value": "technical_support"
-        }
-      ]
-    },
-    {
-      "id": "software_installation",
-      "message": "Software installation issues are common. Let's resolve this:\n\n1. **Check system requirements** - Ensure your device meets minimum specs\n2. **Run as administrator** - Right-click and select 'Run as administrator'\n3. **Disable antivirus temporarily** - Some antivirus software blocks installations\n4. **Download from official source** - Ensure you're using the official installer\n\nWas the software installation successful?",
-      "options": [
-        {
-          "text": "✅ Yes, installed successfully",
-          "value": "issue_resolved"
-        },
-        {
-          "text": "❌ Still having problems",
-          "value": "escalate_technical"
-        },
-        {
-          "text": "🗨 Talk to IT Support",
-          "value": "talk_to_human"
-        },
-        {
-          "text": "↩ Back to Support",
-          "value": "technical_support"
-        }
-      ]
-    },
-    {
-      "id": "accessing_material",
-      "message": "Having trouble accessing your course materials? Here are some solutions:\n\n1. **Check your login credentials** - Ensure username/password are correct\n2. **Clear browser cache** - Clear cookies and cache, then try again\n3. **Try different browser** - Test with Chrome, Firefox, or Edge\n4. **Check internet connection** - Ensure stable internet connection\n\nCan you access your course materials now?",
-      "options": [
-        {
-          "text": "✅ Yes, I can access now",
-          "value": "issue_resolved"
-        },
-        {
-          "text": "❌ Still can't access",
-          "value": "escalate_course"
-        },
-        {
-          "text": "🗨 Talk to Course Support",
-          "value": "talk_to_human"
-        },
-        {
-          "text": "↩ Back to Support",
-          "value": "course_support"
-        }
-      ]
-    },
-    {
-      "id": "enrollment_issues",
-      "message": "Enrollment issues can be resolved quickly. Let's check:\n\n1. **Verify payment status** - Ensure payment was processed successfully\n2. **Check email confirmation** - Look for enrollment confirmation email\n3. **Contact admissions** - Our team can verify your enrollment status\n4. **Check course start date** - Ensure the course hasn't started yet\n\nIs your enrollment issue resolved?",
-      "options": [
-        {
-          "text": "✅ Yes, enrollment confirmed",
-          "value": "issue_resolved"
-        },
-        {
-          "text": "❌ Still need help",
-          "value": "escalate_course"
-        },
-        {
-          "text": "🗨 Talk to Admissions",
-          "value": "talk_to_human"
-        },
-        {
-          "text": "↩ Back to Support",
-          "value": "course_support"
-        }
-      ]
-    },
-    {
-      "id": "talk_to_lecturer",
-      "message": "I'll connect you with your course lecturer. Please provide:\n\n1. Your full name\n2. Course name\n3. Specific question or concern\n\nYour lecturer will get back to you within 24 hours.",
-      "collectUserInfo": true,
-      "options": [
-        {
-          "text": "Submit Request",
-          "value": "submit_lecturer_request"
-        },
-        {
-          "text": "🗨 Talk to Course Support",
-          "value": "talk_to_human"
-        },
-        {
-          "text": "↩ Back to Support",
-          "value": "course_support"
-        }
-      ]
-    },
-    {
-      "id": "submit_lecturer_request",
-      "message": "Thank you! Your lecturer will contact you within 24 hours to address your questions or concerns.",
-      "options": [
-        {
-          "text": "🔄 Return to Main Menu",
-          "value": "welcome"
-        },
-        {
-          "text": "👋 End Chat",
-          "value": "end"
-        }
-      ]
-    },
-    {
-      "id": "make_payment",
-      "message": "To make a payment, please provide:\n\n1. Invoice number or course name\n2. Amount to pay\n3. Preferred payment method\n4. Contact information\n\nOur billing team will send you a secure payment link.",
-      "collectUserInfo": true,
-      "options": [
-        {
-          "text": "Submit Payment Request",
-          "value": "submit_payment_request"
-        },
-        {
-          "text": "🗨 Talk to Billing",
-          "value": "talk_to_human"
-        },
-        {
-          "text": "↩ Back to Support",
-          "value": "billing_payments"
-        }
-      ]
-    },
-    {
-      "id": "submit_payment_request",
-      "message": "Thank you! Our billing team will send you a secure payment link within 1 hour.",
-      "options": [
-        {
-          "text": "🔄 Return to Main Menu",
-          "value": "welcome"
-        },
-        {
-          "text": "👋 End Chat",
-          "value": "end"
-        }
-      ]
-    },
-    {
-      "id": "request_invoice",
-      "message": "I'll help you request an invoice. Please provide:\n\n1. Company name (if applicable)\n2. Course or service details\n3. Billing address\n4. Contact information\n\nOur billing team will prepare and send your invoice.",
-      "collectUserInfo": true,
-      "options": [
-        {
-          "text": "Submit Invoice Request",
-          "value": "submit_invoice_request"
-        },
-        {
-          "text": "🗨 Talk to Billing",
-          "value": "talk_to_human"
-        },
-        {
-          "text": "↩ Back to Support",
-          "value": "billing_payments"
-        }
-      ]
-    },
-    {
-      "id": "submit_invoice_request",
-      "message": "Thank you! Your invoice will be prepared and sent to you within 2 hours.",
-      "options": [
-        {
-          "text": "🔄 Return to Main Menu",
-          "value": "welcome"
-        },
-        {
-          "text": "👋 End Chat",
-          "value": "end"
-        }
-      ]
-    },
-    {
-      "id": "payment_issues",
-      "message": "I understand you're having payment issues. Let's resolve this:\n\n1. **Check payment method** - Ensure your card/bank account is valid\n2. **Verify billing address** - Ensure it matches your payment method\n3. **Check for sufficient funds** - Ensure adequate balance\n4. **Contact your bank** - Some banks block online transactions\n\nIs your payment issue resolved?",
-      "options": [
-        {
-          "text": "✅ Yes, payment went through",
-          "value": "issue_resolved"
-        },
-        {
-          "text": "❌ Still having issues",
-          "value": "escalate_billing"
-        },
-        {
-          "text": "🗨 Talk to Billing Specialist",
-          "value": "talk_to_human"
-        },
-        {
-          "text": "↩ Back to Support",
-          "value": "billing_payments"
-        }
-      ]
-    },
-    {
-      "id": "issue_resolved",
-      "message": "Excellent! I'm glad we could resolve your issue. Is there anything else I can help you with today?",
-      "options": [
-        {
-          "text": "🔄 Return to Main Menu",
-          "value": "welcome"
-        },
-        {
-          "text": "👋 End Chat",
-          "value": "end"
-        }
-      ]
-    },
-    {
-      "id": "escalate_technical",
-      "message": "I'll escalate your technical issue to our senior support team. They will contact you within 2 hours to provide advanced technical assistance.",
-      "options": [
-        {
-          "text": "🔄 Return to Main Menu",
-          "value": "welcome"
-        },
-        {
-          "text": "👋 End Chat",
-          "value": "end"
-        }
-      ]
-    },
-    {
-      "id": "escalate_course",
-      "message": "I'll escalate your course-related issue to our academic support team. They will contact you within 4 hours to resolve your concern.",
-      "options": [
-        {
-          "text": "🔄 Return to Main Menu",
-          "value": "welcome"
-        },
-        {
-          "text": "👋 End Chat",
-          "value": "end"
-        }
-      ]
-    },
-    {
-      "id": "escalate_billing",
-      "message": "I'll escalate your billing issue to our senior billing specialist. They will contact you within 1 hour to resolve your payment concern.",
-      "options": [
-        {
-          "text": "🔄 Return to Main Menu",
-          "value": "welcome"
-        },
-        {
-          "text": "👋 End Chat",
-          "value": "end"
-        }
-      ]
-    },
-    {
-      "id": "talk_to_human",
-      "message": "Okay, I'll connect you to one of our representatives. Please wait a moment.\n\nTo better assist you, please provide:\n1. Your name\n2. Email address\n3. Phone number\n4. Brief description of your inquiry",
-      "collectUserInfo": true,
-      "options": [
-        {
-          "text": "Submit Information",
-          "value": "submit_human_request"
-        },
-        {
-          "text": "↩ Back to Main Menu",
-          "value": "welcome"
-        }
-      ]
-    },
-    {
-      "id": "submit_human_request",
-      "message": "Thank you! One of our representatives will contact you shortly. In the meantime, is there anything else I can help you with?",
-      "options": [
-        {
-          "text": "🔄 Return to Main Menu",
-          "value": "welcome"
-        },
-        {
-          "text": "👋 End Chat",
-          "value": "end"
-        }
-      ]
-    },
-    {
-      "id": "end",
-      "message": "Thank you for chatting with us today! If you have any more questions in the future, feel free to return to this chat. Have a great day! 👋",
-      "options": [
-        {
-          "text": "🔄 Start New Conversation",
-          "value": "welcome"
+      "name": "Zongotek Master Flow",
+      "description": "Complete customer support and service flow for all Zongotek interactions",
+      "status": "active",
+      "createdAt": "2024-01-01T00:00:00.000Z",
+      "updatedAt": "2024-01-01T00:00:00.000Z",
+      "questions": [
+        {
+          "id": "q_welcome",
+          "text": "👋 Hello! Welcome to **Zongotek** - your complete IT education and technology solutions partner! I'm here to help you with everything from courses and training to IT equipment and support. How can I assist you today?",
+          "type": "text",
+          "isInitial": true,
+          "position": { "x": 250, "y": 100 },
+          "answers": [
+            {
+              "id": "a_learning",
+              "text": "📚 I want to learn - Show me courses",
+              "isPrimary": true,
+              "isSecondary": false,
+              "actions": [
+                {
+                  "id": "action_learning",
+                  "type": "navigate_to_question",
+                  "payload": { "questionId": "q_learning_path" }
+                }
+              ]
+            },
+            {
+              "id": "a_equipment",
+              "text": "💻 I need IT equipment",
+              "isPrimary": false,
+              "isSecondary": true,
+              "actions": [
+                {
+                  "id": "action_equipment",
+                  "type": "navigate_to_question",
+                  "payload": { "questionId": "q_equipment_path" }
+                }
+              ]
+            },
+            {
+              "id": "a_support",
+              "text": "🛠 I need help/support",
+              "isPrimary": false,
+              "isSecondary": false,
+              "actions": [
+                {
+                  "id": "action_support",
+                  "type": "navigate_to_question",
+                  "payload": { "questionId": "q_support_path" }
+                }
+              ]
+            },
+            {
+              "id": "a_human",
+              "text": "🗨 I want to speak with someone",
+              "isPrimary": false,
+              "isSecondary": false,
+              "actions": [
+                {
+                  "id": "action_human",
+                  "type": "navigate_to_question",
+                  "payload": { "questionId": "q_human_connection" }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "q_learning_path",
+          "text": "Excellent! Education is the foundation of success. Let me help you find the perfect learning path. What's your main interest or goal?",
+          "type": "text",
+          "isInitial": false,
+          "position": { "x": 250, "y": 200 },
+          "answers": [
+            {
+              "id": "a_tech_learning",
+              "text": "🖥 Technology & Programming",
+              "isPrimary": true,
+              "isSecondary": false,
+              "actions": [
+                {
+                  "id": "action_tech_learning",
+                  "type": "navigate_to_question",
+                  "payload": { "questionId": "q_tech_learning" }
+                }
+              ]
+            },
+            {
+              "id": "a_digital_learning",
+              "text": "🌐 Digital Skills & Office",
+              "isPrimary": false,
+              "isSecondary": true,
+              "actions": [
+                {
+                  "id": "action_digital_learning",
+                  "type": "navigate_to_question",
+                  "payload": { "questionId": "q_digital_learning" }
+                }
+              ]
+            },
+            {
+              "id": "a_creative_learning",
+              "text": "🎨 Creative & Design",
+              "isPrimary": false,
+              "isSecondary": false,
+              "actions": [
+                {
+                  "id": "action_creative_learning",
+                  "type": "navigate_to_question",
+                  "payload": { "questionId": "q_creative_learning" }
+                }
+              ]
+            },
+            {
+              "id": "a_business_learning",
+              "text": "📈 Business & Career",
+              "isPrimary": false,
+              "isSecondary": false,
+              "actions": [
+                {
+                  "id": "action_business_learning",
+                  "type": "navigate_to_question",
+                  "payload": { "questionId": "q_business_learning" }
+                }
+              ]
+            },
+            {
+              "id": "a_back_learning",
+              "text": "↩ Back to main menu",
+              "isPrimary": false,
+              "isSecondary": false,
+              "actions": [
+                {
+                  "id": "action_back_learning",
+                  "type": "navigate_to_question",
+                  "payload": { "questionId": "q_welcome" }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "q_tech_learning",
+          "text": "Perfect choice! Technology skills are in high demand. Which area interests you most?",
+          "type": "text",
+          "isInitial": false,
+          "position": { "x": 250, "y": 300 },
+          "answers": [
+            {
+              "id": "a_software_dev",
+              "text": "💻 Software Development",
+              "isPrimary": true,
+              "isSecondary": false,
+              "actions": [
+                {
+                  "id": "action_software_dev",
+                  "type": "navigate_to_question",
+                  "payload": { "questionId": "q_software_dev_details" }
+                }
+              ]
+            },
+            {
+              "id": "a_cybersecurity",
+              "text": "🔒 Cybersecurity",
+              "isPrimary": false,
+              "isSecondary": true,
+              "actions": [
+                {
+                  "id": "action_cybersecurity",
+                  "type": "navigate_to_question",
+                  "payload": { "questionId": "q_cybersecurity_details" }
+                }
+              ]
+            },
+            {
+              "id": "a_cloud",
+              "text": "☁️ Cloud Computing",
+              "isPrimary": false,
+              "isSecondary": false,
+              "actions": [
+                {
+                  "id": "action_cloud",
+                  "type": "navigate_to_question",
+                  "payload": { "questionId": "q_cloud_details" }
+                }
+              ]
+            },
+            {
+              "id": "a_mobile_dev",
+              "text": "📱 Mobile App Development",
+              "isPrimary": false,
+              "isSecondary": false,
+              "actions": [
+                {
+                  "id": "action_mobile_dev",
+                  "type": "navigate_to_question",
+                  "payload": { "questionId": "q_mobile_dev_details" }
+                }
+              ]
+            },
+            {
+              "id": "a_back_tech",
+              "text": "↩ Back to learning paths",
+              "isPrimary": false,
+              "isSecondary": false,
+              "actions": [
+                {
+                  "id": "action_back_tech",
+                  "type": "navigate_to_question",
+                  "payload": { "questionId": "q_learning_path" }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "q_software_dev_details",
+          "text": "🚀 **Software Development Course**\n\nMaster modern programming with our comprehensive curriculum:\n\n• **Frontend Development**: HTML, CSS, JavaScript, React\n• **Backend Development**: Node.js, Python, databases\n• **Mobile Development**: React Native, Flutter\n• **DevOps & Deployment**: Git, Docker, cloud platforms\n• **Real-world Projects**: Build 5+ portfolio projects\n\nPerfect for beginners and career changers!",
+          "type": "text",
+          "isInitial": false,
+          "position": { "x": 250, "y": 400 },
+          "answers": [
+            {
+              "id": "a_enroll_software",
+              "text": "📝 Enroll in Software Development",
+              "isPrimary": true,
+              "isSecondary": false,
+              "actions": [
+                {
+                  "id": "action_enroll_software",
+                  "type": "navigate_to_question",
+                  "payload": { "questionId": "q_enrollment_process" }
+                }
+              ]
+            },
+            {
+              "id": "a_payment_software",
+              "text": "💵 View Pricing & Payment Plans",
+              "isPrimary": false,
+              "isSecondary": true,
+              "actions": [
+                {
+                  "id": "action_payment_software",
+                  "type": "navigate_to_question",
+                  "payload": { "questionId": "q_payment_options" }
+                }
+              ]
+            },
+            {
+              "id": "a_schedule_software",
+              "text": "📅 Check Class Schedules",
+              "isPrimary": false,
+              "isSecondary": false,
+              "actions": [
+                {
+                  "id": "action_schedule_software",
+                  "type": "navigate_to_question",
+                  "payload": { "questionId": "q_schedule_details" }
+                }
+              ]
+            },
+            {
+              "id": "a_human_software",
+              "text": "🗨 Talk to Admissions",
+              "isPrimary": false,
+              "isSecondary": false,
+              "actions": [
+                {
+                  "id": "action_human_software",
+                  "type": "navigate_to_question",
+                  "payload": { "questionId": "q_human_connection" }
+                }
+              ]
+            },
+            {
+              "id": "a_back_software",
+              "text": "↩ Explore Other Tech Courses",
+              "isPrimary": false,
+              "isSecondary": false,
+              "actions": [
+                {
+                  "id": "action_back_software",
+                  "type": "navigate_to_question",
+                  "payload": { "questionId": "q_tech_learning" }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "q_equipment_path",
+          "text": "💻 Perfect! We're your trusted IT equipment partner. What do you need?",
+          "type": "text",
+          "isInitial": false,
+          "position": { "x": 250, "y": 200 },
+          "answers": [
+            {
+              "id": "a_computer_equipment",
+              "text": "🖥 Computers & Laptops",
+              "isPrimary": true,
+              "isSecondary": false,
+              "actions": [
+                {
+                  "id": "action_computer_equipment",
+                  "type": "navigate_to_question",
+                  "payload": { "questionId": "q_computer_equipment" }
+                }
+              ]
+            },
+            {
+              "id": "a_mobile_equipment",
+              "text": "📱 Mobile Devices",
+              "isPrimary": false,
+              "isSecondary": true,
+              "actions": [
+                {
+                  "id": "action_mobile_equipment",
+                  "type": "navigate_to_question",
+                  "payload": { "questionId": "q_mobile_equipment" }
+                }
+              ]
+            },
+            {
+              "id": "a_printer_equipment",
+              "text": "🖨 Printers & Accessories",
+              "isPrimary": false,
+              "isSecondary": false,
+              "actions": [
+                {
+                  "id": "action_printer_equipment",
+                  "type": "navigate_to_question",
+                  "payload": { "questionId": "q_printer_equipment" }
+                }
+              ]
+            },
+            {
+              "id": "a_networking_equipment",
+              "text": "🔧 Networking & Security",
+              "isPrimary": false,
+              "isSecondary": false,
+              "actions": [
+                {
+                  "id": "action_networking_equipment",
+                  "type": "navigate_to_question",
+                  "payload": { "questionId": "q_networking_equipment" }
+                }
+              ]
+            },
+            {
+              "id": "a_back_equipment",
+              "text": "↩ Back to main menu",
+              "isPrimary": false,
+              "isSecondary": false,
+              "actions": [
+                {
+                  "id": "action_back_equipment",
+                  "type": "navigate_to_question",
+                  "payload": { "questionId": "q_welcome" }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "q_support_path",
+          "text": "🛠 I'm here to help! What kind of support do you need?",
+          "type": "text",
+          "isInitial": false,
+          "position": { "x": 250, "y": 200 },
+          "answers": [
+            {
+              "id": "a_technical_support",
+              "text": "⚡ Technical Issues",
+              "isPrimary": true,
+              "isSecondary": false,
+              "actions": [
+                {
+                  "id": "action_technical_support",
+                  "type": "navigate_to_question",
+                  "payload": { "questionId": "q_technical_support" }
+                }
+              ]
+            },
+            {
+              "id": "a_course_support",
+              "text": "📚 Course/Learning Help",
+              "isPrimary": false,
+              "isSecondary": true,
+              "actions": [
+                {
+                  "id": "action_course_support",
+                  "type": "navigate_to_question",
+                  "payload": { "questionId": "q_course_support" }
+                }
+              ]
+            },
+            {
+              "id": "a_billing_support",
+              "text": "💳 Billing & Payments",
+              "isPrimary": false,
+              "isSecondary": false,
+              "actions": [
+                {
+                  "id": "action_billing_support",
+                  "type": "navigate_to_question",
+                  "payload": { "questionId": "q_billing_support" }
+                }
+              ]
+            },
+            {
+              "id": "a_equipment_support",
+              "text": "🔧 Equipment Support",
+              "isPrimary": false,
+              "isSecondary": false,
+              "actions": [
+                {
+                  "id": "action_equipment_support",
+                  "type": "navigate_to_question",
+                  "payload": { "questionId": "q_equipment_support" }
+                }
+              ]
+            },
+            {
+              "id": "a_back_support",
+              "text": "↩ Back to main menu",
+              "isPrimary": false,
+              "isSecondary": false,
+              "actions": [
+                {
+                  "id": "action_back_support",
+                  "type": "navigate_to_question",
+                  "payload": { "questionId": "q_welcome" }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "q_human_connection",
+          "text": "🗨 **Connect with Our Team**\n\nI'll connect you with the right person to help you! Please provide:\n\n**Contact Information:**\n1. Your Name\n2. Email Address\n3. Phone Number\n4. Best Time to Call\n5. Brief Description of Your Inquiry\n6. Preferred Contact Method (Call/Email/Text)\n\n**Our Team:**\n• **Admissions** - Course enrollment and questions\n• **Sales** - Equipment quotes and orders\n• **Technical Support** - Troubleshooting and repairs\n• **Billing** - Payments and invoices\n• **General Support** - Any other questions\n\nWe'll get back to you within 1 hour during business hours!",
+          "type": "text",
+          "isInitial": false,
+          "position": { "x": 250, "y": 200 },
+          "answers": [
+            {
+              "id": "a_contact_submit",
+              "text": "✅ Submit Contact Request",
+              "isPrimary": true,
+              "isSecondary": false,
+              "actions": [
+                {
+                  "id": "action_contact_submit",
+                  "type": "navigate_to_question",
+                  "payload": { "questionId": "q_contact_submitted" }
+                }
+              ]
+            },
+            {
+              "id": "a_call_now",
+              "text": "📞 Call Us Now",
+              "isPrimary": false,
+              "isSecondary": true,
+              "actions": [
+                {
+                  "id": "action_call_now",
+                  "type": "url",
+                  "payload": { "url": "tel:+1234567890" }
+                }
+              ]
+            },
+            {
+              "id": "a_email_contact",
+              "text": "📧 Send Email",
+              "isPrimary": false,
+              "isSecondary": false,
+              "actions": [
+                {
+                  "id": "action_email_contact",
+                  "type": "url",
+                  "payload": { "url": "mailto:info@zongotek.com" }
+                }
+              ]
+            },
+            {
+              "id": "a_back_human",
+              "text": "↩ Back to Main Menu",
+              "isPrimary": false,
+              "isSecondary": false,
+              "actions": [
+                {
+                  "id": "action_back_human",
+                  "type": "navigate_to_question",
+                  "payload": { "questionId": "q_welcome" }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "q_contact_submitted",
+          "text": "🗨 **Contact Request Submitted!**\n\nThank you! Our team will reach out to you soon.\n\n**Response Timeline:**\n⏰ Within 1 hour during business hours (9 AM - 6 PM)\n📧 Email confirmation sent\n📞 Phone call or preferred contact method\n\n**What to Expect:**\n• Personalized assistance from our experts\n• Detailed answers to your questions\n• Custom solutions for your needs\n• Follow-up to ensure satisfaction\n\n**Business Hours:**\n• Monday - Friday: 9:00 AM - 6:00 PM\n• Saturday: 10:00 AM - 4:00 PM\n• Sunday: Closed\n\nIs there anything else I can help you with today?",
+          "type": "text",
+          "isInitial": false,
+          "position": { "x": 250, "y": 300 },
+          "answers": [
+            {
+              "id": "a_new_conversation",
+              "text": "🔄 Start New Conversation",
+              "isPrimary": true,
+              "isSecondary": false,
+              "actions": [
+                {
+                  "id": "action_new_conversation",
+                  "type": "navigate_to_question",
+                  "payload": { "questionId": "q_welcome" }
+                }
+              ]
+            },
+            {
+              "id": "a_browse_courses",
+              "text": "📚 Browse Courses",
+              "isPrimary": false,
+              "isSecondary": true,
+              "actions": [
+                {
+                  "id": "action_browse_courses",
+                  "type": "navigate_to_question",
+                  "payload": { "questionId": "q_learning_path" }
+                }
+              ]
+            },
+            {
+              "id": "a_check_equipment",
+              "text": "💻 Check Equipment",
+              "isPrimary": false,
+              "isSecondary": false,
+              "actions": [
+                {
+                  "id": "action_check_equipment",
+                  "type": "navigate_to_question",
+                  "payload": { "questionId": "q_equipment_path" }
+                }
+              ]
+            },
+            {
+              "id": "a_end_chat",
+              "text": "👋 End Chat",
+              "isPrimary": false,
+              "isSecondary": false,
+              "actions": [
+                {
+                  "id": "action_end_chat",
+                  "type": "navigate_to_question",
+                  "payload": { "questionId": "q_end_conversation" }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "q_end_conversation",
+          "text": "👋 **Thank You for Choosing Zongotek!**\n\nIt was a pleasure assisting you today! Here's a quick summary of what we discussed:\n\n**Remember:**\n• We're here 24/7 for all your IT education and equipment needs\n• Our courses can help you advance your career\n• Our equipment solutions keep you productive\n• Our support team is always ready to help\n\n**Stay Connected:**\n• Website: www.zongotek.com\n• Email: info@zongotek.com\n• Phone: (555) 123-4567\n• Social Media: @ZongotekIT\n\n**Come Back Soon!**\nFeel free to return anytime for courses, equipment, or support. We're always here to help you succeed! 🚀\n\nHave a wonderful day!",
+          "type": "text",
+          "isInitial": false,
+          "position": { "x": 250, "y": 400 },
+          "answers": [
+            {
+              "id": "a_start_new",
+              "text": "🔄 Start New Conversation",
+              "isPrimary": true,
+              "isSecondary": false,
+              "actions": [
+                {
+                  "id": "action_start_new",
+                  "type": "navigate_to_question",
+                  "payload": { "questionId": "q_welcome" }
+                }
+              ]
+            }
+          ]
         }
       ]
     }
   ],
   "sampleResponses": {
     "greeting": [
-      "Hello! How can I help you today?",
-      "Hi there! Welcome to Zongotek. What can I assist you with?",
-      "Welcome! I'm your virtual assistant. How may I help you?"
+      "Hello! Welcome to Zongotek. How can I help you today?",
+      "Hi there! I'm your Zongotek assistant. What can I do for you?",
+      "Welcome! I'm here to help with courses, equipment, and support."
     ],
     "farewell": [
-      "Thank you for chatting with us. Have a great day!",
-      "It was a pleasure assisting you. Feel free to reach out if you need anything else.",
-      "Thanks for contacting Zongotek. Goodbye!"
+      "Thank you for choosing Zongotek! Have a great day!",
+      "It was a pleasure helping you. Come back anytime!",
+      "Thanks for chatting with us. We're here whenever you need us!"
     ],
     "fallback": [
-      "I'm sorry, I didn't understand that. Could you please rephrase?",
-      "I'm not sure I follow. Can you try asking in a different way?",
-      "I apologize, but I'm having trouble understanding your request."
+      "I'm not sure I understand. Could you rephrase that?",
+      "Let me help you better. Can you tell me more specifically what you need?",
+      "I want to make sure I help you correctly. Could you clarify your request?"
     ]
   }
 }

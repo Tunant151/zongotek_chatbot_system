@@ -484,11 +484,11 @@ const EnhancedZongotekChatWidget = () => {
     return (
       <>
         <style dangerouslySetInnerHTML={{ __html: loaderStyles }} />
-        <div className="fixed z-50 right-6 bottom-6">
+        <div className="fixed right-6 bottom-6 z-50">
           <div className="relative">
             {/* Loading overlay */}
               {isLoading && (
-                <div className="absolute inset-0 z-10 flex items-center justify-center bg-red-500 rounded-full -top-15">
+                <div className="flex absolute inset-0 z-10 justify-center items-center bg-red-500 rounded-full -top-15">
                   <div className="z-10 loader"></div>
                 </div>
               )}
@@ -499,7 +499,7 @@ const EnhancedZongotekChatWidget = () => {
               className="bg-[#FFD700] hover:bg-[#FFC700] transition-all overflow-hidden duration-300 rounded-full w-16 h-16 flex items-center justify-center shadow-lg hover:shadow-xl transform hover:scale-105 relative"
               aria-label="Open chat"
             >
-              <img src="./aibot.png" alt="AI Assistant" className="w-full h-full" />
+              <img src="../../assets/images/aibot.png" alt="AI Assistant" className="w-full h-full" />
               
               
             </button>
@@ -514,9 +514,9 @@ const EnhancedZongotekChatWidget = () => {
     return (
       <>
         <style dangerouslySetInnerHTML={{ __html: loaderStyles }} />
-        <div className="fixed z-50 right-6 bottom-6">
+        <div className="fixed right-6 bottom-6 z-50">
         {/* AI Toggle Button */}
-        <div className="absolute bottom-0 right-0">
+        <div className="absolute right-0 bottom-0">
           <div className="relative">
             <button
               onClick={() => setIsOpen(true)}
@@ -525,11 +525,11 @@ const EnhancedZongotekChatWidget = () => {
               className="bg-[#FFD700] hover:bg-[#FFC700] transition-all overflow-hidden duration-300 rounded-full w-16 h-16 flex items-center justify-center shadow-lg hover:shadow-xl transform hover:scale-105 relative"
               aria-label="Open chat"
             >
-              <img src="./aibot.png" alt="AI Assistant" className="w-full h-full" />
+              <img src="../../assets/images/aibot.png" alt="AI Assistant" className="w-full h-full" />
               
               {/* Loading overlay */}
               {isLoading && (
-                <div className="absolute inset-0 flex items-center justify-center rounded-full bg-black/20">
+                <div className="flex absolute inset-0 justify-center items-center rounded-full bg-black/20">
                   <div className="loader"></div>
                 </div>
               )}
@@ -572,7 +572,7 @@ const EnhancedZongotekChatWidget = () => {
               
               <button
                 onClick={handleJustBrowsing}
-                className={`w-full ${isDarkMode ? 'bg-gray-600 hover:bg-gray-500 text-white' : 'bg-gray-200 hover:bg-gray-300 text-gray-800'} font-medium py-2 px-4 rounded transition-colors`}
+                className={`w-full ${isDarkMode ? 'text-white bg-gray-600 hover:bg-gray-500' : 'text-gray-800 bg-gray-200 hover:bg-gray-300'} font-medium py-2 px-4 rounded transition-colors`}
               >
                 Just browsing
               </button>
@@ -609,7 +609,7 @@ const EnhancedZongotekChatWidget = () => {
               <input
                 type="text"
                 placeholder="Send us a message..."
-                className={`w-full ${isDarkMode ? 'bg-gray-700 border-gray-600 text-white placeholder-gray-400' : 'bg-white border-gray-300 text-gray-800 placeholder-gray-500'} border rounded-lg py-2 px-3 pr-10 focus:outline-none focus:ring-2 focus:ring-[#FFD700] focus:border-transparent`}
+                className={`w-full ${isDarkMode ? 'placeholder-gray-400 text-white bg-gray-700 border-gray-600' : 'placeholder-gray-500 text-gray-800 bg-white border-gray-300'} border rounded-lg py-2 px-3 pr-10 focus:outline-none focus:ring-2 focus:ring-[#FFD700] focus:border-transparent`}
                 value={userInput}
                 onChange={(e) => setUserInput(e.target.value)}
                 onKeyPress={(e) => {
@@ -634,7 +634,7 @@ const EnhancedZongotekChatWidget = () => {
             {/* <div className="flex justify-end mt-4">
               <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-[#FFD700]">
                 <img
-                  src="/aibot.png"
+                  src="./aibot.png"
                   alt="Support Agent"
                   className="object-cover w-full h-full"
                 />
@@ -668,17 +668,17 @@ const EnhancedZongotekChatWidget = () => {
             </p>
           </div>
         </div>
-        <div className="flex items-center gap-2">
+        <div className="flex gap-2 items-center">
           <button
             onClick={() => setShowWelcome(true)}
-            className="p-1 transition-colors rounded hover:bg-black/10"
+            className="p-1 rounded transition-colors hover:bg-black/10"
             title="Minimize"
           >
             <Minimize2 size={16} />
           </button>
           <button
             onClick={() => setIsOpen(false)}
-            className="p-1 transition-colors rounded hover:bg-black/10"
+            className="p-1 rounded transition-colors hover:bg-black/10"
             title="Close"
           >
             <X size={16} />
@@ -694,7 +694,7 @@ const EnhancedZongotekChatWidget = () => {
         
         {isTyping && (
           <div className="flex justify-start">
-            <div className={`${isDarkMode ? 'bg-gray-700 text-white' : 'bg-amber-100 text-gray-800 border border-amber-200'} rounded-lg px-4 py-2 max-w-xs`}>
+            <div className={`${isDarkMode ? 'text-white bg-gray-700' : 'text-gray-800 bg-amber-100 border border-amber-200'} rounded-lg px-4 py-2 max-w-xs`}>
               <div className="flex space-x-1">
                 <div className="w-2 h-2 bg-gray-400 rounded-full animate-bounce"></div>
                 <div className="w-2 h-2 bg-gray-400 rounded-full animate-bounce" style={{ animationDelay: '0.1s' }}></div>
@@ -709,7 +709,7 @@ const EnhancedZongotekChatWidget = () => {
 
       {/* Chat Input */}
       <div className={`${isDarkMode ? 'bg-[#2D2D2D] border-gray-600' : 'bg-amber-50 border-amber-200'} p-4 border-t`}>
-        <div className="flex items-center gap-2">
+        <div className="flex gap-2 items-center">
           <input
             ref={inputRef}
             type="text"
@@ -717,7 +717,7 @@ const EnhancedZongotekChatWidget = () => {
             onChange={(e) => setUserInput(e.target.value)}
             onKeyPress={handleKeyPress}
             placeholder="Type your message..."
-            className={`flex-1 ${isDarkMode ? 'bg-gray-700 border-gray-600 text-white placeholder-gray-400' : 'bg-white border-amber-300 text-gray-800 placeholder-gray-500'} border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#FFD700] focus:border-transparent`}
+            className={`flex-1 ${isDarkMode ? 'placeholder-gray-400 text-white bg-gray-700 border-gray-600' : 'placeholder-gray-500 text-gray-800 bg-white border-amber-300'} border rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[#FFD700] focus:border-transparent`}
           />
           <button
             onClick={handleSendMessage}
